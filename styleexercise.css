@@ -19,7 +19,7 @@ nav{
   }
   nav .logo{
     padding-top: 10px;
-    padding-left: 50px;
+    padding-left: 220px;
   }
   nav ul{
     display: flex;
@@ -288,6 +288,7 @@ nav{
     background-attachment: fixed;
     font-family: montserrat;
     background-image: linear-gradient(white, #C697F5);
+    overflow: hidden;
   }
   
   @media only screem and (min-width:414px){

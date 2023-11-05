@@ -405,11 +405,11 @@
     </section>
     <style>
       .rectangle {
-        height: 580px;
+        height: 450px;
         width: 600px;
         background-color: #c697f5;
         position: absolute;
-        top: 55%;
+        top: 48%;
         left: 52%;
         transform: translate(-50%, -50%);
         padding: 10px;
@@ -421,7 +421,7 @@
         padding: 30px 50px;
       }
       input{
-        width: 100px;
+        width: 130px;
         border-radius: 5px;
         border-color: #731c92;
         font-size: 16px;
@@ -433,7 +433,7 @@
         background-color: #FDC500;
         font-size: 16px;
         margin-left: 400px;
-        
+        margin-top: 20px;
       }
       div h1{
         position: absolute;
@@ -444,7 +444,7 @@
       }
       .direction{
         position: absolute;
-        top: 19%;
+        top: 18%;
         left: 36%;
         padding: 10px;
         font-family: Arial, Helvetica, sans-serif;
@@ -455,7 +455,7 @@
     
     #result {
         display: none;
-        height: 580px;
+        height: 450px;
         width: 600px;
         position: absolute;
         top: 50%;
@@ -468,7 +468,7 @@
     }
     #wrong {
         display: none;
-        height: 580px;
+        height: 450px;
         width: 600px;
         position: absolute;
         top: 50%;
@@ -481,27 +481,20 @@
     }
     </style>
     <div>
-        <h1>Exercise 2:</h1>
-        <p class="direction"><b>Direction:</b> Add the correct CSS selector to complete the code. </p>
+        <h1>Exercise 5:</h1>
+        <p class="direction"><b>Direction:</b> Input a title attribute named "Example" inside iframe code block.</p>
     </div>
     <div class="rectangle">
       <p>
         &lt;!DOCTYPE html&gt;<br>
         &lt;html&gt;<br>
-        &lt;head&gt;<br>
-        &lt;style&gt;<br>
-        &nbsp;&nbsp;<input id="userInput" type="text">
-        {<br>
-        &nbsp;&nbsp;background-color: yellow;<br>
-        &nbsp;&nbsp;padding: 5px;<br>
-        }<br>
-        &lt;/style&gt;<br>
-        &lt;/head&gt;<br>
-        &lt;body&gt;<br>
-        <br>
-        &lt;p&gt;This is a <span id="myspan">&lt;span id="myspan"&gt;highlighted&lt;/span&gt;</span> text.&lt;/p&gt;<br>
-        <br>
-        &lt;/body&gt;<br>
+        &nbsp;&nbsp;&lt;head&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;IFrame Example 1&lt;/title&gt;<br>
+        &nbsp;&nbsp;&lt;/head&gt;<br>
+        &nbsp;&nbsp;&lt;body&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;Example of an iframe&lt;/h2&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;&nbsp;iframe src="https://www.example.com" width="800" height="600" <input id="userInput" type="text">&nbsp;&gt;&lt;/iframe&gt;<br>
+        &nbsp;&nbsp;&lt;/body&gt;<br>
         &lt;/html&gt;
       </p>
       <button type="button" onclick="checkInput()">Submit Answer</button>
@@ -518,9 +511,9 @@
     const userInput = document.getElementById('userInput').value;
     const resultDiv = document.getElementById('result');
     const wrongDIv = document.getElementById('wrong');
-    if (userInput.trim() === '#myspan') {
+    if (userInput.trim() === 'title="Example"') {
       document.getElementById('nextPage').addEventListener('click', function() {
-      window.location.href = "idexercise3.html";
+      window.location.href = "#";
     });
       resultDiv.style.backgroundColor = '#2AF574';
       resultDiv.style.textAlign = "center"
@@ -528,7 +521,7 @@
       resultDiv.style.fontSize = '30px'
     } else {
       document.getElementById('tryAgain').addEventListener('click', function() {
-      window.location.href = "idexercise2.html";
+      window.location.href = "iframeexer5.html";
     });
       wrongDIv.style.display = "initial"
       wrongDIv.style.backgroundColor = '#f5698c'
