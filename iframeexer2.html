@@ -405,7 +405,7 @@
     </section>
     <style>
       .rectangle {
-        height: 580px;
+        height: 550px;
         width: 600px;
         background-color: #c697f5;
         position: absolute;
@@ -421,7 +421,7 @@
         padding: 30px 50px;
       }
       input{
-        width: 100px;
+        width: 80px;
         border-radius: 5px;
         border-color: #731c92;
         font-size: 16px;
@@ -433,7 +433,7 @@
         background-color: #FDC500;
         font-size: 16px;
         margin-left: 400px;
-        
+        margin-top: 20px;
       }
       div h1{
         position: absolute;
@@ -444,7 +444,7 @@
       }
       .direction{
         position: absolute;
-        top: 19%;
+        top: 18%;
         left: 36%;
         padding: 10px;
         font-family: Arial, Helvetica, sans-serif;
@@ -455,7 +455,7 @@
     
     #result {
         display: none;
-        height: 580px;
+        height: 550px;
         width: 600px;
         position: absolute;
         top: 50%;
@@ -468,7 +468,7 @@
     }
     #wrong {
         display: none;
-        height: 580px;
+        height: 550px;
         width: 600px;
         position: absolute;
         top: 50%;
@@ -482,26 +482,19 @@
     </style>
     <div>
         <h1>Exercise 2:</h1>
-        <p class="direction"><b>Direction:</b> Add the correct CSS selector to complete the code. </p>
+        <p class="direction"><b>Direction:</b> Add a PDF file named HTML inside the src.</p>
     </div>
     <div class="rectangle">
       <p>
         &lt;!DOCTYPE html&gt;<br>
         &lt;html&gt;<br>
-        &lt;head&gt;<br>
-        &lt;style&gt;<br>
-        &nbsp;&nbsp;<input id="userInput" type="text">
-        {<br>
-        &nbsp;&nbsp;background-color: yellow;<br>
-        &nbsp;&nbsp;padding: 5px;<br>
-        }<br>
-        &lt;/style&gt;<br>
-        &lt;/head&gt;<br>
-        &lt;body&gt;<br>
-        <br>
-        &lt;p&gt;This is a <span id="myspan">&lt;span id="myspan"&gt;highlighted&lt;/span&gt;</span> text.&lt;/p&gt;<br>
-        <br>
-        &lt;/body&gt;<br>
+        &nbsp;&nbsp;&lt;head&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;IFrame Example 4&lt;/title&gt;<br>
+        &nbsp;&nbsp;&lt;/head&gt;<br>
+        &nbsp;&nbsp;&lt;body&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;Embedded PDF&lt;/h2&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;iframe src="&nbsp;<input id="userInput" type="text">&nbsp;" width="800" height="600" title="Embedded PDF"&gt;&lt;/iframe&gt;<br>
+        &nbsp;&nbsp;&lt;/body&gt;<br>
         &lt;/html&gt;
       </p>
       <button type="button" onclick="checkInput()">Submit Answer</button>
@@ -518,9 +511,9 @@
     const userInput = document.getElementById('userInput').value;
     const resultDiv = document.getElementById('result');
     const wrongDIv = document.getElementById('wrong');
-    if (userInput.trim() === '#myspan') {
+    if (userInput.trim() === 'HTML.pdf') {
       document.getElementById('nextPage').addEventListener('click', function() {
-      window.location.href = "idexercise3.html";
+      window.location.href = "iframeexer3.html";
     });
       resultDiv.style.backgroundColor = '#2AF574';
       resultDiv.style.textAlign = "center"
@@ -528,7 +521,7 @@
       resultDiv.style.fontSize = '30px'
     } else {
       document.getElementById('tryAgain').addEventListener('click', function() {
-      window.location.href = "idexercise2.html";
+      window.location.href = "iframeexer2.html";
     });
       wrongDIv.style.display = "initial"
       wrongDIv.style.backgroundColor = '#f5698c'
