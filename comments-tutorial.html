@@ -1,36 +1,33 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <title>Web Dev Activity</title>
-    <link rel="stylesheet" href="styletuto.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
+   <head>
+      <meta charset="utf-8">
+      <title>Web Dev Activity</title>
+      <link rel="stylesheet" href="styletuto.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link
       href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <script defer src="script.js"></script>
-  </head>
-  <body>
+      <script defer src="script.js"></script>
+   </head>
+   <body>
     <nav>
       <div class="logo">
-        <img src="assets/logo.png" alt="HTMLearn" />
+         <img src="assets/logo.png" alt="HTMLearn">
       </div>
-      <input type="checkbox" id="click" />
+      <input type="checkbox" id="click">
       <label for="click" class="menu-btn">
-        <i class="fas fa-bars"></i>
+      <i class="fas fa-bars"></i>
       </label>
       <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a class="active" href="/tutorial.html">Tutorial</a></li>
-        <li><a href="./exercise.html">Exercise</a></li>
+         <li><a href="/index.html">Home</a></li>
+         <li><a class="active" href="/tutorial.html">Tutorial</a></li>
+         <li><a href="./exercise.html">Exercise</a></li>
       </ul>
-    </nav>
-    <div class="sidebar close">
+   </nav>
+   <div class="sidebar close">
       <a href="#" class="logo-box">
         <div class="logo-name">HTML Tutorials</div>
       </a>
@@ -266,6 +263,7 @@
         </li>
       </ul>
     </div>
+
     <section class="home">
       <div class="toggle-sidebar">
         <i class="bx bx-menu"></i>
@@ -273,7 +271,7 @@
     </section>
     <style>
       .rectangle {
-        height: 700px;
+        height: 800px;
         width: 1300px;
         background-color: #c697f5;
         position: absolute;
@@ -287,7 +285,7 @@
       }
       .rectangle h2 {
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 30px;
+        font-size: 18px;
         padding: 10px 30px;
       }
 
@@ -296,54 +294,56 @@
         padding: 10px 30px;
       }
       .explained {
-        margin-top: 200px;
+        margin-top: 150px;
       }
       .container {
-        height: 200px;
-        width: 400px;
+        height: 110px;
+        width: 650px;
         background-color: #b6b6b6;
         position: absolute;
-        top: 40%;
-        left: 18%;
+        top: 62%;
+        left: 28%;
         transform: translate(-50%, -50%);
         padding: 10px;
         border-radius: 15px;
         border: 2px solid;
       }
+
     </style>
     <div class="rectangle">
-      <h2>HTML Id</h2>
+      <h2>HTML Comment</h2>
       <p>
-        The id attribute in HTML is a global attribute that defines a unique
-        identifier (ID) which must be unique in the whole document. Its purpose
-        is to identify the element when linking (using a fragment identifier),
-        scripting, or styling (with CSS)
+        An HTML comment tag is a way to insert comments into the source code of a webpage. 
+        It doesn't have any impact on the display of the page in the browser; it's purely 
+        for developers to include notes or explanations within the HTML code.
       </p>
-      <p>Here’s an example of how it can be used:</p>
-      <div class="container">
+
+       <p> You can add comments to you HTML Source by using the following syntax:</p>
+
+      <p>  < !-- Write your comments here -- > </p>
+        
+       <p> Note: Notice that there is an exclamation point (!) in the start tag, 
+        but not in the end of tag. Anything between < !-- and --> is treated as a 
+        comment and is ignored by the browser when rendering the webpage.</p>
+    
+     <p><strong>1. Add Comments</strong></p>
+    <p>With comments you can place notifications and reminders in you HTML Code:</p>
+    <p>Example: </p>
+    <div class="container">
         <p>
-          &lt;h2 id="title"&gt;Hello World!&lt;/h2&gt;<br />
-          &lt;style&gt;<br />
-          &nbsp;#title {<br />
-          &nbsp;&nbsp;color: red;<br />
-          &nbsp;}<br />
-          &lt;/style&gt;
+          < !-- This is a comment about the following paragraph --><br />
+
+          < p> This is a sample paragprah on my webpage. < /p><br />
+          < !-- Feel free to add more comments as needed --><br />
         </p>
       </div>
       <div class="explained">
         <p>
-          In this example, the id attribute is used to apply CSS styling to a
-          specific HTML element. The id attribute can also be used by JavaScript
-          to manipulate the element with the specific id.
+          <strong>2. Hide Comments</strong>
         </p>
-        <p>
-          Please note that an id’s value must not contain whitespace (spaces,
-          tabs, etc.). Technically, the value for an id attribute may contain
-          any character, except whitespace characters. However, to avoid
-          inadvertent errors, only ASCII letters, digits, ‘_’, and ‘-’ should be
-          used, and the value for an id attribute should start with a letter.
-        </p>
-      </div>
+        <p>Comments can be used to hide comment. This can be helpful if you hide content temporarily:</p>
+        <p><strong>3. Hide Inline Content</strong></p>
+        <p>Comments can be used to hide parts in the middle of the HTML code.</p>
     </div>
   </body>
 </html>
