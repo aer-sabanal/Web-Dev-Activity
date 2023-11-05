@@ -272,7 +272,7 @@
     <style>
       .rectangle {
         height: 700px;
-        width: 1300px;
+        width: 1200px;
         background-color: #c697f5;
         position: absolute;
         top: 55%;
@@ -293,65 +293,56 @@
         font-size: 18px;
         padding: 10px 30px;
       }
-      .explained {
-        margin-top: 100px;
+
+      .paragraph-header-tut{
+        align-items: center;
+        margin: 0;
+        padding: 0.5rem 0.1rem;
+        border: 1px;
+        border: solid;
+        border-radius: 20px;
+        text-align: center;
       }
-      .container {
-        height: 100px;
-        width: 1000px;
+
+      .tut-1 {
         background-color: #b6b6b6;
-        position: absolute;
-        top: 34%;
-        left: 41.5%;
-        transform: translate(-50%, -50%);
-        padding: 10px;
-        border-radius: 15px;
-        border: 2px solid;
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        width: 400px;
       }
-      .cont {
-        height: 80px;
-        width: 1060px;
-        background-color: #b6b6b6;
-        position: absolute;
-        top: 65%;
-        left: 44%;
-        transform: translate(-50%, -50%);
-        padding: 10px;
-        border-radius: 15px;
-        border: 2px solid;
-      }
-      .explain {
-        margin-top: 90px;
-      }
+
+
     </style>
     <div class="rectangle">
-      <h2>HTML Iframes</h2>
-      <p>HTML Iframes, also known as Inline Frames, are used to display a nested webpage (a webpage within a webpage). The HTML &lt;iframe&gt; tag defines an inline frame. An inline frame is used to embed another document within the current HTML document.
+      <h1>HTML Paragraphs</h1>
+      <p>The HTML element represents a paragraph. Paragraphs are usually represented in visual media as 
+        blocks of text separated from adjacent blocks by blank lines and/or first-line indentation,
+        but HTML paragraphs can be any structural grouping of related content, such as images or form fields.
       </p>
-      <p>Here’s an example of how it can be used:</p>
-      <div class="container">
-        <p>
-          <p>
-            &lt;iframe src="https://www.example.com" title="Example Website" height="500" width="500"&gt;&lt;/iframe&gt;
+      <p>
+        Paragraphs are block-level elements,
+         and notably will automatically close if another block-level element is 
+         parsed before the closing tag.
+      </p>
+      <p><b>HTML Display:</b> </br>
+        With HTML, displaying cannot be changed by adding extra lines or spaces in the codes. 
+        The browser will automatically remove these upon display.
+      </p>
+      <header class="paragraph-header-tut"> 
+        <h2 center> How to use Paragraph Element? </h2>
+      </header>
+      <div> 
+        <div class="tut-1">
+          <p> 
+            <b>Syntax:</b> </br> &lt;p&gt; (insert text here) &lt;/p&gt;
           </p>
-          
-        </p>
-      </div>
-      <div class="explained">
-        <p>
-          In this example, the src attribute is used to specify the URL of the website to be loaded. The title attribute is included for screen readers to read the title to users. The height and width attributes are used to set the size of the iframe.
-        </p>
-        <p>
-          You can also use CSS to set the width and height of the iframe using the style attribute. For example:
-        </p>
-        <div class="cont">
           <p>
-            &lt;iframe src="https://www.example.com" style="height:200px;width:300px" title="Example Website"&gt;&lt;/iframe&gt;
+            <b>Example:</b></br>
+            &lt;p&gt; I am a paragraph. &lt;/p&gt; </br>
+            <b>Result: </b></br>
+            I am a paragraph.
           </p>
-        </div>
-        <div class="explain">
-          <p>It’s important to add height and width to allocate space on the webpage for the iframe. It prevents content from moving when the iframe loads.</p>
-        </div>
-      </div>
+    </div>
    </body>
 </html>

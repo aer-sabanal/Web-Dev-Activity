@@ -271,17 +271,19 @@
     </section>
     <style>
       .rectangle {
+        display: inline-block;
         height: 700px;
-        width: 1300px;
+        width: 1200px;
         background-color: #c697f5;
         position: absolute;
         top: 55%;
         left: 52%;
         transform: translate(-50%, -50%);
-        padding: 10px;
+        padding: 5px;
         border-radius: 15px;
         border: 5px solid;
         border-color: #731c92;
+        padding-bottom: 50px;
       }
       .rectangle h2 {
         font-family: Arial, Helvetica, sans-serif;
@@ -293,65 +295,70 @@
         font-size: 18px;
         padding: 10px 30px;
       }
-      .explained {
-        margin-top: 100px;
-      }
-      .container {
-        height: 100px;
+
+      .styles-header-tut{
+        align-items: center;
         width: 1000px;
-        background-color: #b6b6b6;
-        position: absolute;
-        top: 34%;
-        left: 41.5%;
-        transform: translate(-50%, -50%);
-        padding: 10px;
-        border-radius: 15px;
+        margin: 0;
+        padding-bottom: 0;
+        border: 0.5px;
+        border: solid;
+        border-radius: 20px;
+        text-align: center;
+        margin-left: 70px;
+      }
+
+      table, th, td {
+        margin-left: 300px;
         border: 2px solid;
+        align-items: center;
       }
-      .cont {
-        height: 80px;
-        width: 1060px;
-        background-color: #b6b6b6;
-        position: absolute;
-        top: 65%;
-        left: 44%;
-        transform: translate(-50%, -50%);
-        padding: 10px;
-        border-radius: 15px;
-        border: 2px solid;
-      }
-      .explain {
-        margin-top: 90px;
-      }
+
+      
     </style>
     <div class="rectangle">
-      <h2>HTML Iframes</h2>
-      <p>HTML Iframes, also known as Inline Frames, are used to display a nested webpage (a webpage within a webpage). The HTML &lt;iframe&gt; tag defines an inline frame. An inline frame is used to embed another document within the current HTML document.
+      <h1>HTML Styles</h1>
+      <p>Styles in HTML are basically rules that describe how a document will be presented in a browser.  
+        Styles in HTML are basically rules that describe how a document will be presented in a browser.   </p>
+      <p>
+        There are 3 ways of implementing style in HTML: </br>
+        <b>Inline Style:</b> In this method, the style attribute is used inside the HTML start tag. </br>
+        <b>Embedded Style:</b> In this method, the style element is used inside the element of the document. </br>
+        <b>External Style:</b> In this method, the style element is used to point to an external CSS file. </br> 
       </p>
-      <p>Here’s an example of how it can be used:</p>
-      <div class="container">
-        <p>
-          <p>
-            &lt;iframe src="https://www.example.com" title="Example Website" height="500" width="500"&gt;&lt;/iframe&gt;
-          </p>
-          
-        </p>
-      </div>
-      <div class="explained">
-        <p>
-          In this example, the src attribute is used to specify the URL of the website to be loaded. The title attribute is included for screen readers to read the title to users. The height and width attributes are used to set the size of the iframe.
-        </p>
-        <p>
-          You can also use CSS to set the width and height of the iframe using the style attribute. For example:
-        </p>
-        <div class="cont">
-          <p>
-            &lt;iframe src="https://www.example.com" style="height:200px;width:300px" title="Example Website"&gt;&lt;/iframe&gt;
-          </p>
-        </div>
-        <div class="explain">
-          <p>It’s important to add height and width to allocate space on the webpage for the iframe. It prevents content from moving when the iframe loads.</p>
-        </div>
-      </div>
+      <header class="styles-header-tut"> 
+        <h2 center> HTML Style Example </h2>
+      </header>
+      <table>
+        <tr>
+          <th><b>Example: </b></th>
+          <th><b>Result: </b></th>
+        </tr>
+        <tr>
+          <td>
+            &lt;!DOCTYPE html&gt; </br>
+            &lt;html&gt; </br>
+            &lt;head&gt; </br>
+            &lt;style&gt; </br>
+            h1 &#123;color&#58;blue &#125; </br>
+            p &#123;color&#58;red &#125; </br>  
+            &lt;/style&gt; </br>
+            &lt;/head&gt; </br>
+            &lt;body&gt; </br>
+
+            &lt;h1&gt; This is a heading &lt;/h1&gt;</br>
+            &lt;p&gt; This is a paragraph&lt;/style&gt; </br>
+
+            &lt;/body&gt; </br>
+            &lt;/html&gt; </br>
+          </td>
+          <td>
+            <h3 style="color: blue; padding-left: 20px; font-size: 30px; padding-right: 20px; " 
+            >This is a heading</h3> </br>
+            <p style="color: red; ">This is a paragraph</p>
+          </td>
+        </tr>
+      </table>
+    </div>      
    </body>
 </html>
