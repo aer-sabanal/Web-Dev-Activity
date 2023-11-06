@@ -1,36 +1,33 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <title>Web Dev Activity</title>
-    <link rel="stylesheet" href="styletuto.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
+   <head>
+      <meta charset="utf-8">
+      <title>Web Dev Activity</title>
+      <link rel="stylesheet" href="styletuto.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link
       href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <script defer src="script.js"></script>
-  </head>
-  <body>
+      <script defer src="script.js"></script>
+   </head>
+   <body>
     <nav>
       <div class="logo">
-        <img src="assets/logo.png" alt="HTMLearn" />
+         <img src="assets/logo.png" alt="HTMLearn">
       </div>
-      <input type="checkbox" id="click" />
+      <input type="checkbox" id="click">
       <label for="click" class="menu-btn">
-        <i class="fas fa-bars"></i>
+      <i class="fas fa-bars"></i>
       </label>
       <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a class="active" href="/tutorial.html">Tutorial</a></li>
-        <li><a href="./exercise.html">Exercise</a></li>
+         <li><a href="/index.html">Home</a></li>
+         <li><a class="active" href="/tutorial.html">Tutorial</a></li>
+         <li><a href="./exercise.html">Exercise</a></li>
       </ul>
-    </nav>
-    <div class="sidebar close">
+   </nav>
+   <div class="sidebar close">
       <a href="#" class="logo-box">
         <div class="logo-name">HTML Tutorials</div>
       </a>
@@ -266,6 +263,8 @@
           </li>
         </ul>
       </div>
+    
+
     <section class="home">
       <div class="toggle-sidebar">
         <i class="bx bx-menu"></i>
@@ -273,21 +272,22 @@
     </section>
     <style>
       .rectangle {
-        height: 700px;
-        width: 1300px;
+        height: 70%;
+        width: 1100px;
         background-color: #c697f5;
         position: absolute;
         top: 55%;
-        left: 52%;
+        left: 56%;
         transform: translate(-50%, -50%);
         padding: 10px;
         border-radius: 15px;
         border: 5px solid;
         border-color: #731c92;
+        overflow: auto;
       }
       .rectangle h2 {
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 30px;
+        font-size: 18px;
         padding: 10px 30px;
       }
 
@@ -296,54 +296,111 @@
         padding: 10px 30px;
       }
       .explained {
-        margin-top: 200px;
+        margin-top: 80px;
       }
-      .container {
-        height: 200px;
-        width: 400px;
-        background-color: #b6b6b6;
-        position: absolute;
-        top: 40%;
-        left: 18%;
-        transform: translate(-50%, -50%);
-        padding: 10px;
-        border-radius: 15px;
-        border: 2px solid;
-      }
+      
+
     </style>
     <div class="rectangle">
-      <h2>HTML Id</h2>
+      <h2>HTML Text Formatting</h2>
       <p>
-        The id attribute in HTML is a global attribute that defines a unique
-        identifier (ID) which must be unique in the whole document. Its purpose
-        is to identify the element when linking (using a fragment identifier),
-        scripting, or styling (with CSS)
+        HTML formatting refers to the way content is presented and styled on a web page 
+        using Hypertext Markup Language (HTML). HTML provides a set of tags and attributes 
+        that allow you to structure and format the text, images, links, and other elements 
+        on your webpage. It defines the layout, style, and appearance of the content.
       </p>
-      <p>Here’s an example of how it can be used:</p>
-      <div class="container">
+      <p> HTML Formatting Elements were designed to display special types of text:</p>
+      <p>
+        <ul>
+          <li>
+          < b > - Bold Text
+          </li>
+        </ul>
+        <ul>
+          <li>
+          < strong > - Important Text
+          </li>
+        </ul>
+      </p>
+
+        <p>The HTML < b > elements defines bold text, without any extra importance. 
+          While, the HTML < strong > element defines text with strong importance. 
+          The content inside is typically in bold. </p>
         <p>
-          &lt;h2 id="title"&gt;Hello World!&lt;/h2&gt;<br />
-          &lt;style&gt;<br />
-          &nbsp;#title {<br />
-          &nbsp;&nbsp;color: red;<br />
-          &nbsp;}<br />
-          &lt;/style&gt;
-        </p>
-      </div>
-      <div class="explained">
+            <ul>
+              <li>
+              < i > - Italic Text
+              </li>
+            </ul>
+            <ul>
+              <li>
+              < em > - Emphasized Text
+              </li>
+            </ul>
+          </p>
         <p>
-          In this example, the id attribute is used to apply CSS styling to a
-          specific HTML element. The id attribute can also be used by JavaScript
-          to manipulate the element with the specific id.
+          The HTML < i > element defines a part of text in an alternate voice or mood. 
+          The content inside is typically displayed in italic. While, the HTML < em > 
+          element defines emphasized text. The content inseide id typically displayed 
+          in italic. 
+        </p>
+        <p> 
+          Note: The < i > tag is often used to indicate a technical term, a phase from 
+          another language, a thought, a ship name, etc. And a screen will pronounce in 
+          < em > with an emphasis, using verbal stress
         </p>
         <p>
-          Please note that an id’s value must not contain whitespace (spaces,
-          tabs, etc.). Technically, the value for an id attribute may contain
-          any character, except whitespace characters. However, to avoid
-          inadvertent errors, only ASCII letters, digits, ‘_’, and ‘-’ should be
-          used, and the value for an id attribute should start with a letter.
+          <ul>
+            <li>
+            < mark > - Marked Text
+            </li>
+          </ul>
         </p>
-      </div>
+        <p>The HTML < mark> element defines smaller text.</p>
+        <p>
+          <ul>
+            <li>
+          < small > - Smaller Text
+            </li>
+          </ul>
+        </p>
+        <p>The HTML < small> element defines text that should be marked or highlighted.</p>
+        <p>
+          <ul>
+           <li>
+        < del > - Deleted Text
+          </li>
+        </ul>
+      </p>
+      <p>The HTML < del> elements defines text that has been deleted from a document.</p>
+      <p>
+       <ul>
+         <li>
+      < ins > - Inserted Text
+        </li>
+       </ul>
+      </p>
+      <p>The HTML < ins> element defines a text that has been inserted into a document.</p>
+      <p>
+        <ul>
+         <li>
+       < sub > - Suberscript Text
+         </li>
+        </ul>
+      </p>
+      <p>The HTML < sub> element defines a text that has been inserted into a document.</p>
+      <p>
+        <ul>
+         <li>
+        < sup > - Superscript Text
+         </li>
+        </ul>
+      </p>
+      <p>
+        The HTML < sup> element defines superscript text. Supercript text halt a character 
+        above the normal line, and is sometimes rendered in a smaller font. Superscript text 
+        can be user for footnotes like WWW.
+      </p>
     </div>
-  </body>
+   </body>
 </html>

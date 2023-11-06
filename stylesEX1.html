@@ -27,7 +27,7 @@
       <ul>
         <li><a href="/index.html">Home</a></li>
         <li><a href="/tutorial.html">Tutorial</a></li>
-        <li><a class="active" href="./exercise.html">Exercise</a></li>
+        <li><a class="active" href="/exercise.html">Exercise</a></li>
       </ul>
     </nav>
     <div class="sidebar close">
@@ -83,7 +83,7 @@
             <a href="paragraphEX3.html" class="link">Exercise 3</a>
             <a href="paragraphEX4.html" class="link">Exercise 4</a>
             <a href="paragraphEX5.html" class="link">Exercise 5</a>
-            <a href="paragraph.html" class="link">HTML Paragraphs Tutorial</a>
+            <a href="paragraphs.html" class="link">HTML Paragraphs Tutorial</a>
           </div>
         </li>
 
@@ -287,15 +287,22 @@
               <span class="name">HTML Scripts</span>
             </a>
           </div>
-          <div class="submenu">
-            <a href="#" class="link submenu-title">HTML Scripts</a>
-            <a href="scriptexer1.html" class="link">Exercise 1</a>
-            <a href="scriptexer2.html" class="link">Exercise 2</a>
-            <a href="scriptexer3.html" class="link">Exercise 3</a>
-            <a href="scriptexer4.html" class="link">Exercise 4</a>
-            <a href="scriptexer5.html" class="link">Exercise 5</a>
-            <a href="Scripts.html" class="link">HTML Scripts Tutorial</a>
-          </div>
+          <li class="dropdown">
+            <div class="title">
+              <a href="#" class="link">
+                <span class="name">HTML Scripts</span>
+              </a>
+            </div>
+            <div class="submenu">
+              <a href="#" class="link submenu-title">HTML Scripts</a>
+              <a href="scriptexer1.html" class="link">Exercise 1</a>
+              <a href="scriptexer2.html" class="link">Exercise 2</a>
+              <a href="scriptexer3.html" class="link">Exercise 3</a>
+              <a href="scriptexer4.html" class="link">Exercise 4</a>
+              <a href="scriptexer5.html" class="link">Exercise 5</a>
+              <a href="Scripts.html" class="link">HTML Scripts Tutorial</a>
+            </div>
+          </li>
         </li>
         <li class="dropdown">
           <div class="title">
@@ -405,7 +412,7 @@
     </section>
     <style>
       .rectangle {
-        height: 540px;
+        height: 400px;
         width: 600px;
         background-color: #c697f5;
         position: absolute;
@@ -417,44 +424,50 @@
         border: 5px solid;
         border-color: #731c92;
       }
-      .rectangle p {
+      .rectangle p{
         padding: 30px 50px;
       }
-      input {
-        width: 120px;
+      input{
+        width: 100px;
         border-radius: 5px;
         border-color: #731c92;
         font-size: 16px;
       }
-      button {
+      button{
         width: 150px;
         height: 60px;
         border-radius: 10px;
-        background-color: #fdc500;
+        background-color: #FDC500;
         font-size: 16px;
         margin-left: 400px;
+        margin-bottom: 25px;
       }
-      div h1 {
+      div h1{
         position: absolute;
         top: 14%;
         left: 36%;
         padding: 10px;
         font-family: Arial, Helvetica, sans-serif;
       }
-      .direction {
+      .direction{
         position: absolute;
-        top: 19%;
-        left: 36%;
+        top: 23%;
+        left: 30%;
         padding: 10px;
         font-family: Arial, Helvetica, sans-serif;
       }
       label {
-        font-weight: bold;
-      }
+      font-weight: bold;
+    }
 
-      #result {
+    .h1-ex1{
+      margin-inline-start: -85px;
+
+    }
+    
+    #result {
         display: none;
-        height: 540px;
+        height: 400px;
         width: 600px;
         position: absolute;
         top: 50%;
@@ -464,10 +477,10 @@
         border-radius: 15px;
         border: 5px solid;
         border-color: #731c92;
-      }
-      #wrong {
+    }
+    #wrong {
         display: none;
-        height: 540px;
+        height: 400px;
         width: 600px;
         position: absolute;
         top: 50%;
@@ -477,14 +490,11 @@
         border-radius: 15px;
         border: 5px solid;
         border-color: #731c92;
-      }
+    }
     </style>
     <div>
-      <h1>Exercise 3:</h1>
-      <p class="direction">
-        <b>Direction:</b> Add a color property with the value "blue" inside the
-        "myparagraph" declaration block.
-      </p>
+        <h1 class="h1-ex1">Exercise 1:</h1>
+        <p class="direction"><b>Direction:</b> Add the correct HTML tag to put color red on the text.</p>
     </div>
     <div class="rectangle">
       <p>
@@ -492,14 +502,10 @@
         &lt;html&gt;<br />
         &lt;head&gt;<br />
         &lt;style&gt;<br />
-        #myparagraph &#123;<br />
-        &nbsp;&nbsp;font-size: 18px;<br />
-        &nbsp;&nbsp;<input id="userInput" type="text" /><br />
-        &#125;<br />
+        &lt;p <input id="userInput" type="text">red;&gt;Hello World!&lt;/p&gt;<br />
         &lt;/style&gt;<br />
         &lt;/head&gt;<br />
         &lt;body&gt;<br />
-        &lt;p id="myparagraph"&gt;This is a styled paragraph.&lt;/p&gt;<br />
         &lt;/body&gt;<br />
         &lt;/html&gt;
       </p>
@@ -514,31 +520,27 @@
       </div>
       <script>
         function checkInput() {
-          const userInput = document.getElementById("userInput").value;
-          const resultDiv = document.getElementById("result");
-          const wrongDIv = document.getElementById("wrong");
-          if (userInput.trim() === "color: blue;") {
-            document
-              .getElementById("nextPage")
-              .addEventListener("click", function () {
-                window.location.href = "idexercise4.html";
-              });
-            resultDiv.style.backgroundColor = "#2AF574";
-            resultDiv.style.textAlign = "center";
-            resultDiv.style.display = "initial";
-            resultDiv.style.fontSize = "30px";
-          } else {
-            document
-              .getElementById("tryAgain")
-              .addEventListener("click", function () {
-                window.location.href = "idexercise3.html";
-              });
-            wrongDIv.style.display = "initial";
-            wrongDIv.style.backgroundColor = "#f5698c";
-            wrongDIv.style.textAlign = "center";
-            wrongDIv.style.fontSize = "30px";
-          }
-        }
+    const userInput = document.getElementById('userInput').value;
+    const resultDiv = document.getElementById('result');
+    const wrongDIv = document.getElementById('wrong');
+    if (userInput.trim() === "font-color=") {
+      document.getElementById('nextPage').addEventListener('click', function() {
+      window.location.href = "stylesEX2.html";
+    });
+      resultDiv.style.backgroundColor = '#2AF574';
+      resultDiv.style.textAlign = "center"
+      resultDiv.style.display = "initial"
+      resultDiv.style.fontSize = '30px'
+    } else {
+      document.getElementById('tryAgain').addEventListener('click', function() {
+      window.location.href = "stylesEX1.html";
+    });
+      wrongDIv.style.display = "initial"
+      wrongDIv.style.backgroundColor = '#f5698c'
+      wrongDIv.style.textAlign = "center"
+      wrongDIv.style.fontSize = '30px'
+    }
+  }
       </script>
     </div>
   </body>
