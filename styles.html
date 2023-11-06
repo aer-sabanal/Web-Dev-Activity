@@ -76,7 +76,6 @@
             <a href="#" class="link submenu-title">HTML Styles</a>
           </div>
         </li>
-
         <li>
           <div class="title">
             <a href="#" class="link">
@@ -110,7 +109,7 @@
           </li>
           <li>
             <div class="title">
-              <a href="tutorialjoe.html" class="link">
+              <a href="#" class="link">
                 <span class="name">HTML CSS</span>
               </a>
             </div>
@@ -120,7 +119,7 @@
           </li>
           <li>
             <div class="title">
-              <a href="linksTuts.html" class="link">
+              <a href="#" class="link">
                 <span class="name">HTML Links</span>
               </a>
             </div>
@@ -130,7 +129,7 @@
           </li>
           <li>
             <div class="title">
-              <a href="imageTuts.html" class="link">
+              <a href="#" class="link">
                 <span class="name">HTML Images</span>
               </a>
             </div>
@@ -231,7 +230,7 @@
 
         <li>
           <div class="title">
-            <a href="element.html" class="link">
+            <a href="#" class="link">
               <span class="name">HTML Form Elements</span>
             </a>
           </div>
@@ -242,7 +241,7 @@
 
         <li>
           <div class="title">
-            <a href="INPUT Type.html" class="link">
+            <a href="#" class="link">
               <span class="name">HTML Input Types</span>
             </a>
           </div>
@@ -269,5 +268,96 @@
         <i class="bx bx-menu"></i>
       </div>
     </section>
+    <style>
+      .rectangle {
+        display: inline-block;
+        height: 700px;
+        width: 1200px;
+        background-color: #c697f5;
+        position: absolute;
+        top: 55%;
+        left: 52%;
+        transform: translate(-50%, -50%);
+        padding: 5px;
+        border-radius: 15px;
+        border: 5px solid;
+        border-color: #731c92;
+        padding-bottom: 50px;
+      }
+      .rectangle h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        padding: 10px 30px;
+      }
+
+      .rectangle p {
+        font-size: 18px;
+        padding: 10px 30px;
+      }
+
+      .styles-header-tut{
+        align-items: center;
+        width: 1000px;
+        margin: 0;
+        padding-bottom: 0;
+        border: 0.5px;
+        border: solid;
+        border-radius: 20px;
+        text-align: center;
+        margin-left: 70px;
+      }
+
+      table, th, td {
+        margin-left: 300px;
+        border: 2px solid;
+        align-items: center;
+      }
+
+      
+    </style>
+    <div class="rectangle">
+      <h1>HTML Styles</h1>
+      <p>Styles in HTML are basically rules that describe how a document will be presented in a browser.  
+        Styles in HTML are basically rules that describe how a document will be presented in a browser.   </p>
+      <p>
+        There are 3 ways of implementing style in HTML: </br>
+        <b>Inline Style:</b> In this method, the style attribute is used inside the HTML start tag. </br>
+        <b>Embedded Style:</b> In this method, the style element is used inside the element of the document. </br>
+        <b>External Style:</b> In this method, the style element is used to point to an external CSS file. </br> 
+      </p>
+      <header class="styles-header-tut"> 
+        <h2 center> HTML Style Example </h2>
+      </header>
+      <table>
+        <tr>
+          <th><b>Example: </b></th>
+          <th><b>Result: </b></th>
+        </tr>
+        <tr>
+          <td>
+            &lt;!DOCTYPE html&gt; </br>
+            &lt;html&gt; </br>
+            &lt;head&gt; </br>
+            &lt;style&gt; </br>
+            h1 &#123;color&#58;blue &#125; </br>
+            p &#123;color&#58;red &#125; </br>  
+            &lt;/style&gt; </br>
+            &lt;/head&gt; </br>
+            &lt;body&gt; </br>
+
+            &lt;h1&gt; This is a heading &lt;/h1&gt;</br>
+            &lt;p&gt; This is a paragraph&lt;/style&gt; </br>
+
+            &lt;/body&gt; </br>
+            &lt;/html&gt; </br>
+          </td>
+          <td>
+            <h3 style="color: blue; padding-left: 20px; font-size: 30px; padding-right: 20px; " 
+            >This is a heading</h3> </br>
+            <p style="color: red; ">This is a paragraph</p>
+          </td>
+        </tr>
+      </table>
+    </div>      
    </body>
 </html>

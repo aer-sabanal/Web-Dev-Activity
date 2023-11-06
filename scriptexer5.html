@@ -289,12 +289,12 @@
           </div>
           <div class="submenu">
             <a href="#" class="link submenu-title">HTML Scripts</a>
-            <a href="#" class="link">Exercise 1</a>
-            <a href="#" class="link">Exercise 2</a>
-            <a href="#" class="link">Exercise 3</a>
-            <a href="#" class="link">Exercise 4</a>
-            <a href="#" class="link">Exercise 5</a>
-            <a href="Scripts.html" class="link">HTML Scripts Tutorial</a>
+            <a href="scriptexer1.html" class="link">Exercise 1</a>
+            <a href="scriptexer2.html" class="link">Exercise 2</a>
+            <a href="scriptexer3.html" class="link">Exercise 3</a>
+            <a href="scriptexer4.html" class="link">Exercise 4</a>
+            <a href="scriptexer5.html" class="link">Exercise 5</a>
+            <a href="Script.html" class="link">HTML Scripts Tutorial</a>
           </div>
         </li>
         <li class="dropdown">
@@ -405,12 +405,12 @@
     </section>
     <style>
       .rectangle {
-        height: 300px;
-        width: 715px;
+        height: 500px;
+        width: 650px;
         background-color: #c697f5;
         position: absolute;
-        top: 40%;
-        left: 55%;
+        top: 52%;
+        left: 53%;
         transform: translate(-50%, -50%);
         padding: 10px;
         border-radius: 15px;
@@ -421,10 +421,10 @@
         padding: 30px 50px;
       }
       input{
-        width: 110px;
+        width: 60px;
         border-radius: 5px;
         border-color: #731c92;
-        font-size: 13px;
+        font-size: 14px;
       }
       button{
         width: 150px;
@@ -432,7 +432,7 @@
         border-radius: 10px;
         background-color: #FDC500;
         font-size: 16px;
-        margin-left: 500px;
+        margin-left: 400px;
         margin-top: 20px;
       }
       div h1{
@@ -455,8 +455,8 @@
     
     #result {
         display: none;
-        height: 300px;
-        width: 715px;
+        height: 400px;
+        width: 650px;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -468,8 +468,8 @@
     }
     #wrong {
         display: none;
-        height: 300px;
-        width: 715px;
+        height: 400px;
+        width: 650px;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -481,18 +481,25 @@
     }
     </style>
     <div>
-        <h1>Exercise 3:</h1>
-        <p class="direction"><b>Direction:</b> Use JavaScript to change the HTML content of the &lt;p&gt; element to "Hello World!".</p>
+        <h1>Exercise 5:</h1>
+        <p class="direction"><b>Direction:</b> Complete this block of code to display "Hello, World"<br>text in a dialog box that pops up on the screen.</p>
     </div>
     <div class="rectangle">
       <p>
-        &lt;body&gt;<br>
-        &lt;p id=&quot;example&quot;&gt;Hi.&lt;/p&gt;<br>
-        &lt;script&gt;
-            document.&nbsp;<input id="userInput" type="text">&nbsp;(&quot;example&quot;).innerHTML = &quot;Hello World!&quot;;<br>
-        &lt;/script&gt;<br>
-        &lt;/body&gt;
-      </p>
+        &lt;!DOCTYPE html&gt;<br>
+        &lt;html&gt;<br>
+        &nbsp;&nbsp;&lt;head&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Script Example 1&lt;/title&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;script&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="userInput" type="text">&nbsp;("Hello, World!");<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/script&gt;<br>
+        &nbsp;&nbsp;&lt;/head&gt;<br>
+        &nbsp;&nbsp;&lt;body&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;Script Tag Usage&lt;/h2&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Check the browser for the pop-up message.&lt;/p&gt;<br>
+        &nbsp;&nbsp;&lt;/body&gt;<br>
+        &lt;/html&gt;
+    </p>
       <button type="button" onclick="checkInput()">Submit Answer</button>
       <div id="wrong">
         <p>WRONG ANSWER TRY AGAIN</p>
@@ -507,9 +514,9 @@
     const userInput = document.getElementById('userInput').value;
     const resultDiv = document.getElementById('result');
     const wrongDIv = document.getElementById('wrong');
-    if (userInput.trim() === 'getElementById') {
+    if (userInput.trim() === 'alert') {
       document.getElementById('nextPage').addEventListener('click', function() {
-      window.location.href = "scriptexer4.html";
+      window.location.href = "#";
     });
       resultDiv.style.backgroundColor = '#2AF574';
       resultDiv.style.textAlign = "center"
@@ -517,7 +524,7 @@
       resultDiv.style.fontSize = '30px'
     } else {
       document.getElementById('tryAgain').addEventListener('click', function() {
-      window.location.href = "scriptexer3.html";
+      window.location.href = "scriptexer5.html";
     });
       wrongDIv.style.display = "initial"
       wrongDIv.style.backgroundColor = '#f5698c'
