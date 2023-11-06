@@ -481,12 +481,14 @@
     }
     </style>
     <div>
-        <h1>Exercise 1:</h1>
-        <p class="direction"><b>Direction:</b> Underline the word "coding" in the sentence.</dive></p>
+        <h1>Exercise 3:</h1>
+        <p class="direction"><b>Direction:</b> Use superscript for “2” and subscript for “H” in the chemical formula “H20”.</dive></p>
     </div>
     <div class="rectangle">
       <p>
-        < p>Start <input id="userInput" type="text"> Coding < /u> today!< /p><br />
+        < p><br />
+        Chemical Formula: H <input id="userInput" type="text"> 2 < /sub> 0<br />
+        < /p><br />
       </p>
       <button type="button" onclick="checkInput()">Submit Answer</button>
       <div id="wrong">
@@ -502,9 +504,9 @@
     const userInput = document.getElementById('userInput').value;
     const resultDiv = document.getElementById('result');
     const wrongDIv = document.getElementById('wrong');
-    if (userInput.trim() === '<u>') {
+    if (userInput.trim() === '<sub>') {
       document.getElementById('nextPage').addEventListener('click', function() {
-      window.location.href = "formattingexercise2.html";
+      window.location.href = "formattingexercise4.html";
     });
       resultDiv.style.backgroundColor = '#2AF574';
       resultDiv.style.textAlign = "center"
@@ -512,7 +514,7 @@
       resultDiv.style.fontSize = '30px'
     } else {
       document.getElementById('tryAgain').addEventListener('click', function() {
-      window.location.href = "formatingexercise1.html";
+      window.location.href = "formattingexercise3.html";
     });
       wrongDIv.style.display = "initial"
       wrongDIv.style.backgroundColor = '#f5698c'
