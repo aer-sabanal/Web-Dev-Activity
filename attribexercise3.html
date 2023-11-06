@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Web Dev Activity</title>
+    <link rel="stylesheet" href="styletuto.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="assets/logo.png" alt="HTMLearn" />
+      </div>
+      <input type="checkbox" id="click" />
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/tutorial.html">Tutorial</a></li>
+        <li><a class="active" href="./exercise.html">Exercise</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar close">
+      <a href="#" class="logo-box">
+        <div class="logo-name">HTML Exercises</div>
+      </a>
+
+      <ul class="sidebar-list">
+        <li class="dropdown">
+          <div class="title">
+            <a href="#" class="link">
+              <span class="name">HTML Attributes</span>
+            </a>
+          </div>
+          <div class="submenu">
+            <a href="#" class="link submenu-title">HTML Attributes</a>
+            <a href="attribexercise1.html" class="link">Exercise 1</a>
+            <a href="attribexercise2.html" class="link">Exercise 2</a>
+            <a href="attribexercise3.html" class="link">Exercise 3</a>
+            <a href="attribexercise4.html" class="link">Exercise 4</a>
+            <a href="attribexercise5.html" class="link">Exercise 5</a>
+            <a href="attribute.html" class="link">HTML Attributes Tutorial</a></a>
+          </div>
+        </li>
+
+        <li class="dropdown">
+          <div class="title">
+            <a href="#" class="link">
+              <span class="name">HTML Headings</span>
+            </a>
+          </div>
+          <div class="submenu">
+            <a href="#" class="link submenu-title">HTML Headings</a>
+            <a href="#" class="link">Exercise 1</a>
+            <a href="#" class="link">Exercise 2</a>
+            <a href="#" class="link">Exercise 3</a>
+            <a href="#" class="link">Exercise 4</a>
+            <a href="#" class="link">Exercise 5</a>
+            <a href="#" class="link">HTML Headings Tutorial</a>
+          </div>
+        </li>
+
+        <li class="dropdown">
+          <div class="title">
+            <a href="#" class="link">
+              <span class="name">HTML Paragraphs</span>
+            </a>
+          </div>
+          <div class="submenu">
+            <a href="#" class="link submenu-title">HTML Paragraphs</a>
+            <a href="#" class="link">Exercise 1</a>
+            <a href="#" class="link">Exercise 2</a>
+            <a href="#" class="link">Exercise 3</a>
+            <a href="#" class="link">Exercise 4</a>
+            <a href="#" class="link">Exercise 5</a>
+            <a href="#" class="link">HTML Paragraphs Tutorial</a>
+          </div>
+        </li>
+
+        <li class="dropdown">
+          <div class="title">
+            <a href="#" class="link">
+              <span class="name">HTML Styles</span>
+            </a>
+          </div>
+          <div class="submenu">
+            <a href="#" class="link submenu-title">HTML Styles</a>
+            <a href="#" class="link">Exercise 1</a>
+            <a href="#" class="link">Exercise 2</a>
+            <a href="#" class="link">Exercise 3</a>
+            <a href="#" class="link">Exercise 4</a>
+            <a href="#" class="link">Exercise 5</a>
+            <a href="#" class="link">HTML Styles Tutorial</a>
+          </div>
+        </li>
+
+        <li class="dropdown">
+          <div class="title">
+            <a href="#" class="link">
+              <span class="name">HTML Formatting</span>
+            </a>
+          </div>
+          <div class="submenu">
+            <a href="#" class="link submenu-title">HTML Formatting</a>
+            <a href="#" class="link">Exercise 1</a>
+            <a href="#" class="link">Exercise 2</a>
+            <a href="#" class="link">Exercise 3</a>
+            <a href="#" class="link">Exercise 4</a>
+            <a href="#" class="link">Exercise 5</a>
+            <a href="#" class="link">HTML Styles Tutorial</a>
+          </div>
+        </li>
+
+        <li class="dropdown">
+          <div class="title">
+            <a href="#" class="link">
+              <span class="name">HTML Quotations</span>
+            </a>
+          </div>
+          <div class="submenu">
+            <a href="#" class="link submenu-title">HTML Quotations</a>
+            <a href="#" class="link">Exercise 1</a>
+            <a href="#" class="link">Exercise 2</a>
+            <a href="#" class="link">Exercise 3</a>
+            <a href="#" class="link">Exercise 4</a>
+            <a href="#" class="link">Exercise 5</a>
+            <a href="#" class="link">HTML Quotations Tutorial</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <div class="title">
+            <a href="#" class="link">
+              <span class="name">HTML Comments</span>
+            </a>
+          </div>
+          <div class="submenu">
+            <a href="#" class="link submenu-title">HTML Comments</a>
+            <a href="#" class="link">Exercise 1</a>
+            <a href="#" class="link">Exercise 2</a>
+            <a href="#" class="link">Exercise 3</a>
+            <a href="#" class="link">Exercise 4</a>
+            <a href="#" class="link">Exercise 5</a>
+            <a href="#" class="link">HTML Comments Tutorial</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <div class="title">
+            <a href="#" class="link">
+              <span class="name">HTML CSS</span>
+            </a>
+          </div>
+          <div class="submenu">
+            <a href="#" class="link submenu-title">HTMLCSS</a>
+            <a href="#" class="link">Exercise 1</a>
+            <a href="#" class="link">Exercise 2</a>
+            <a href="#" class="link">Exercise 3</a>
+            <a href="#" class="link">Exercise 4</a>
+            <a href="#" class="link">Exercise 5</a>
+            <a href="#" class="link">HTML CSS Tutorial</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <div class="title">
+            <a href="#" class="link">
+              <span class="name">HTML Links</span>
+            </a>
+          </div>
+          <div class="submenu">
+            <a href="#" class="link submenu-title">HTML Links</a>
+            <a href="#" class="link">Exercise 1</a>
+            <a href="#" class="link">Exercise 2</a>
+            <a href="#" class="link">Exercise 3</a>
+            <a href="#" class="link">Exercise 4</a>
+            <a href="#" class="link">Exercise 5</a>
+            <a href="#" class="link">HTML Links Tutorial</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <div class="title">
+            <a href="#" class="link">
+              <span class="name">HTML Images</span>
+            </a>
+          </div>
+          <div class="submenu">
+            <a href="#" class="link submenu-title">HTML Images</a>
+            <a href="#" class="link">Exercise 1</a>
+            <a href="#" class="link">Exercise 2</a>
+            <a href="#" class="link">Exercise 3</a>
+            <a href="#" class="link">Exercise 4</a>
+            <a href="#" class="link">Exercise 5</a>
+            <a href="#" class="link">HTML Images Tutorial</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <div class="title">
+            <a href="#" class="link">
+              <span class="name">HTML Tables</span>
+            </a>
+          </div>
+          <div class="submenu">
+            <a href="#" class="link submenu-title">HTML Tables</a>
+            <a href="#" class="link">Exercise 1</a>
+            <a href="#" class="link">Exercise 2</a>
+            <a href="#" class="link">Exercise 3</a>
+            <a href="#" class="link">Exercise 4</a>
+            <a href="#" class="link">Exercise 5</a>
+            <a href="#" class="link">HTML Tables Tutorial</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <div class="title">
+            <a href="#" class="link">
+              <span class="name">HTML Lists</span>
+            </a>
+          </div>
+          <div class="submenu">
+            <a href="#" class="link submenu-title">HTML Lists</a>
+            <a href="#" class="link">Exercise 1</a>
+            <a href="#" class="link">Exercise 2</a>
+            <a href="#" class="link">Exercise 3</a>
+            <a href="#" class="link">Exercise 4</a>
+            <a href="#" class="link">Exercise 5</a>
+            <a href="#" class="link">HTML Lists Tutorial</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <div class="title">
+            <a href="#" class="link">
+              <span class="name">HTML Classes</span>
+            </a>
+          </div>
+          <div class="submenu">
+            <a href="#" class="link submenu-title">HTML Classes</a>
+            <a href="#" class="link">Exercise 1</a>
+            <a href="#" class="link">Exercise 2</a>
+            <a href="#" class="link">Exercise 3</a>
+            <a href="#" class="link">Exercise 4</a>
+            <a href="#" class="link">Exercise 5</a>
+            <a href="#" class="link">HTML Classes Tutorial</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <div class="title">
+            <a href="#" class="link">
+              <span class="name">HTML Id</span>
+            </a>
+          </div>
+          <div class="submenu">
+            <a href="#" class="link submenu-title">HTML Id</a>
+            <a href="idexercise1.html" class="link">Exercise 1</a>
+            <a href="idexercise2.html" class="link">Exercise 2</a>
+            <a href="idexercise3.html" class="link">Exercise 3</a>
+            <a href="idexercise4.html" class="link">Exercise 4</a>
+            <a href="idexercise5.html" class="link">Exercise 5</a>
+            <a href="id.html" class="link">HTML Id Tutorial</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <div class="title">
+            <a href="#" class="link">
+              <span class="name">HTML Iframes</span>
+            </a>
+          </div>
+          <div class="submenu">
+            <a href="#" class="link submenu-title">HTML Iframes</a>
+            <a href="iframeexer1.html" class="link">Exercise 1</a>
+            <a href="iframeexer2.html" class="link">Exercise 2</a>
+            <a href="iframeexer3.html" class="link">Exercise 3</a>
+            <a href="iframeexer4.html" class="link">Exercise 4</a>
+            <a href="iframeexer5.html" class="link">Exercise 5</a>
+            <a href="Iframes.html" class="link">HTML Iframes Tutorial</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <div class="title">
+            <a href="#" class="link">
+              <span class="name">HTML Scripts</span>
+            </a>
+          </div>
+          <div class="submenu">
+            <a href="#" class="link submenu-title">HTML Scripts</a>
+            <a href="#" class="link">Exercise 1</a>
+            <a href="#" class="link">Exercise 2</a>
+            <a href="#" class="link">Exercise 3</a>
+            <a href="#" class="link">Exercise 4</a>
+            <a href="#" class="link">Exercise 5</a>
+            <a href="Scripts.html" class="link">HTML Scripts Tutorial</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <div class="title">
+            <a href="#" class="link">
+              <span class="name">HTML Computercode</span>
+            </a>
+          </div>
+          <div class="submenu">
+            <a href="#" class="link submenu-title">HTML Computercode</a>
+            <a href="#" class="link">Exercise 1</a>
+            <a href="#" class="link">Exercise 2</a>
+            <a href="#" class="link">Exercise 3</a>
+            <a href="#" class="link">Exercise 4</a>
+            <a href="#" class="link">Exercise 5</a>
+            <a href="#" class="link">HTML Computercode Tutorial</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <div class="title">
+            <a href="#" class="link">
+              <span class="name">HTML Forms</span>
+            </a>
+          </div>
+          <div class="submenu">
+            <a href="#" class="link submenu-title">HTML Forms</a>
+            <a href="#" class="link">Exercise 1</a>
+            <a href="#" class="link">Exercise 2</a>
+            <a href="#" class="link">Exercise 3</a>
+            <a href="#" class="link">Exercise 4</a>
+            <a href="#" class="link">Exercise 5</a>
+            <a href="#" class="link">HTML Forms Tutorial</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <div class="title">
+            <a href="#" class="link">
+              <span class="name">HTML Form Attributes</span>
+            </a>
+          </div>
+          <div class="submenu">
+            <a href="#" class="link submenu-title">HTML Form Attributes</a>
+            <a href="#" class="link">Exercise 1</a>
+            <a href="#" class="link">Exercise 2</a>
+            <a href="#" class="link">Exercise 3</a>
+            <a href="#" class="link">Exercise 4</a>
+            <a href="#" class="link">Exercise 5</a>
+            <a href="#" class="link">HTML Form Attributes Tutorial</a>
+          </div>
+        </li>
+
+        <li class="dropdown">
+          <div class="title">
+            <a href="#" class="link">
+              <span class="name">HTML Form Elements</span>
+            </a>
+          </div>
+          <div class="submenu">
+            <a href="#" class="link submenu-title">HTML Form Elements</a>
+            <a href="#" class="link">Exercise 1</a>
+            <a href="#" class="link">Exercise 2</a>
+            <a href="#" class="link">Exercise 3</a>
+            <a href="#" class="link">Exercise 4</a>
+            <a href="#" class="link">Exercise 5</a>
+            <a href="#" class="link">HTML Form Elements Tutorial</a>
+          </div>
+        </li>
+
+        <li class="dropdown">
+          <div class="title">
+            <a href="#" class="link">
+              <span class="name">HTML Input Types</span>
+            </a>
+          </div>
+          <div class="submenu">
+            <a href="#" class="link submenu-title">HTML Input Types</a>
+            <a href="#" class="link">Exercise 1</a>
+            <a href="#" class="link">Exercise 2</a>
+            <a href="#" class="link">Exercise 3</a>
+            <a href="#" class="link">Exercise 4</a>
+            <a href="#" class="link">Exercise 5</a>
+            <a href="#" class="link">HTML Input Types Tutorial</a>
+          </div>
+        </li>
+
+        <li class="dropdown">
+          <div class="title">
+            <a href="#" class="link">
+              <span class="name">HTML Input Attributes</span>
+            </a>
+          </div>
+          <div class="submenu">
+            <a href="#" class="link submenu-title">HTML Input Attributes</a>
+            <a href="#" class="link">Exercise 1</a>
+            <a href="#" class="link">Exercise 2</a>
+            <a href="#" class="link">Exercise 3</a>
+            <a href="#" class="link">Exercise 4</a>
+            <a href="#" class="link">Exercise 5</a>
+            <a href="#" class="link">HTML Input Attributes Tutorial</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <section class="home">
+      <div class="toggle-sidebar">
+        <i class="bx bx-menu"></i>
+      </div>
+    </section>
+    <style>
+      .rectangle {
+        height: 530px;
+        width: 660px;
+        background-color: #c697f5;
+        position: absolute;
+        top: 60%;
+        left: 58%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        border-radius: 15px;
+        border: 5px solid;
+        border-color: #731c92;
+      }
+      .rectangle p{
+        padding: 30px 50px;
+      }
+      input{
+        width: 100px;
+        border-radius: 5px;
+        border-color: #731c92;
+        font-size: 16px;
+      }
+      button{
+        width: 150px;
+        height: 60px;
+        border-radius: 10px;
+        background-color: #FDC500;
+        font-size: 16px;
+        margin-left: 450px;
+        margin-top: 70px;
+      }
+      div h1{
+        position: absolute;
+        top: 14%;
+        left: 36%;
+        padding: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .direction{
+        position: absolute;
+        top: 20%;
+        left: 36%;
+        padding: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      label {
+      font-weight: bold;
+    }
+    
+    #result {
+        display: none;
+        height: 530px;
+        width: 660px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        border-radius: 15px;
+        border: 5px solid;
+        border-color: #731c92;
+    }
+    #wrong {
+        display: none;
+        height: 530px;
+        width: 660px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        border-radius: 15px;
+        border: 5px solid;
+        border-color: #731c92;
+    }
+    </style>
+    <div>
+        <h1>Exercise 3:</h1>
+        <p class="direction"><b>Direction:</b> Fill in the blanks with the appropriate HTML attributes for the given elements.</p>
+    </div>
+    <div class="rectangle">
+      <p>
+        &lt;!DOCTYPE html&gt;<br />
+        &lt;html&gt;<br />
+        &lt;body&gt;<br />
+        &lt;a&nbsp;&nbsp;<input id="userInput" type="text">
+        &nbsp;="https://www.htmlearn.com/">HTML Learning Tutorial.&lt;/a&gt; <br/>
+        &lt;/body&gt;<br />
+        &lt;/html&gt;
+      </p>
+      <button type="button" onclick="checkInput()">Submit Answer</button>
+      <div id="wrong">
+        <p>WRONG ANSWER TRY AGAIN</p>
+        <button type="button" id="tryAgain">Try Again</button>
+      </div>
+      <div id="result">
+        <p>CORRECT ANSWER!!!</p>
+        <button type="button" id="nextPage">Next Exercise</button>
+      </div>
+      <script>
+        function checkInput() {
+    const userInput = document.getElementById('userInput').value;
+    const resultDiv = document.getElementById('result');
+    const wrongDIv = document.getElementById('wrong');
+    if (userInput.trim() === 'href') {
+      document.getElementById('nextPage').addEventListener('click', function() {
+      window.location.href = "attribexercise4.html";
+    });
+      resultDiv.style.backgroundColor = '#2AF574';
+      resultDiv.style.textAlign = "center"
+      resultDiv.style.display = "initial"
+      resultDiv.style.fontSize = '30px'
+    } else {
+      document.getElementById('tryAgain').addEventListener('click', function() {
+      window.location.href = "attribexercise3.html";
+    });
+      wrongDIv.style.display = "initial"
+      wrongDIv.style.backgroundColor = '#f5698c'
+      wrongDIv.style.textAlign = "center"
+      wrongDIv.style.fontSize = '30px'
+    }
+  }
+      </script>
+    </div>
+  </body>
+</html>
