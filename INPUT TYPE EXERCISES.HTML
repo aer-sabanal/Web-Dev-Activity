@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container {
+            background-color: #f2e7fe;
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #d6b6ff;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>5 Exercises about HTML Input Types</h2>
+    <ol>
+        <li>
+            <strong>Exercise 1:</strong> What is the primary purpose of the provided HTML code?
+            <form id="e1Form">
+                <input type="text" id="e1Answer" placeholder="Your Answer">
+                <button type="button" onclick="checkAnswer(1)">Submit Answer</button>
+                <p id="e1Result"></p>
+            </form>
+        </li>
+        <li>
+            <strong>Exercise 2:</strong> Which input type is used for radio buttons in HTML?
+            <form id="e2Form">
+                <input type="text" id="e2Answer" placeholder="Your Answer">
+                <button type="button" onclick="checkAnswer(2)">Submit Answer</button>
+                <p id="e2Result"></p>
+            </form>
+        </li>
+        <li>
+            <strong>Exercise 3:</strong> How are radio buttons associated with their labels for user-friendliness?
+            <form id="e3Form">
+                <input type="text" id="e3Answer" placeholder="Your Answer">
+                <button type="button" onclick="checkAnswer(3)">Submit Answer</button>
+                <p id="e3Result"></p>
+            </form>
+        </li>
+        <li>
+            <strong>Exercise 4:</strong> What happens when a user clicks the "Submit" button in the HTML form?
+            <form id="e4Form">
+                <input type="text" id="e4Answer" placeholder="Your Answer">
+                <button type="button" onclick="checkAnswer(4)">Submit Answer</button>
+                <p id="e4Result"></p>
+            </form>
+        </li>
+        <li>
+            <strong>Exercise 5:</strong> What attribute specifies the action URL for the form's submission?
+            <form id="e5Form">
+                <input type="text" id="e5Answer" placeholder="Your Answer">
+                <button type="button" onclick="checkAnswer(5)">Submit Answer</button>
+                <p id="e5Result"></p>
+            </form>
+        </li>
+    </ol>
+</div>
+<script>
+    function checkAnswer(exerciseNumber) {
+        const answerId = "e" + exerciseNumber + "Answer";
+        const resultId = "e" + exerciseNumber + "Result";
+        const answer = document.getElementById(answerId).value;
+        const correctAnswers = {
+            1: "The HTML code creates a form with radio buttons to choose a favorite Pinoy artist.",
+            2: "The input type 'radio' is used for radio buttons in HTML.",
+            3: "Labels are associated with radio buttons to enhance user-friendliness.",
+            4: "When the user clicks the 'Submit' button, the selected choice is sent to the form's action URL.",
+            5: "The action attribute specifies the URL for form submission."
+        };
+
+        if (answer.toLowerCase() === correctAnswers[exerciseNumber].toLowerCase()) {
+            document.getElementById(resultId).textContent = "Correct!";
+            document.getElementById(resultId).style.color = "green";
+        } else {
+            document.getElementById(resultId).textContent = "Try again. The correct answer is: " + correctAnswers[exerciseNumber];
+            document.getElementById(resultId).style.color = "red";
+        }
+    }
+</script>
+</body>
+</html>

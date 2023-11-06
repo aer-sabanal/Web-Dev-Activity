@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container {
+            background-color: #f2e7fe;
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #d6b6ff;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>5 Exercises about HTML Elements</h2>
+    <ol>
+        <li>
+            <strong>Exercise 1:</strong> What is the primary purpose of the provided HTML code?
+            <form id="e1Form">
+                <input type="text" id="e1Answer" placeholder="Your Answer">
+                <button type="button" onclick="checkAnswer(1)">Submit Answer</button>
+                <p id="e1Result"></p>
+            </form>
+        </li>
+        <li>
+            <strong>Exercise 2:</strong> Which element in the HTML code provides an input field for "First name"?
+            <form id="e2Form">
+                <input type="text" id="e2Answer" placeholder="Your Answer">
+                <button type="button" onclick="checkAnswer(2)">Submit Answer</button>
+                <p id="e2Result"></p>
+            </form>
+        </li>
+        <li>
+            <strong>Exercise 3:</strong> What attributes are associated with the <code>&lt;input&gt;</code> element in the HTML code?
+            <form id="e3Form">
+                <input type="text" id="e3Answer" placeholder="Your Answer">
+                <button type="button" onclick="checkAnswer(3)">Submit Answer</button>
+                <p id="e3Result"></p>
+            </form>
+        </li>
+        <li>
+            <strong>Exercise 4:</strong> Why are line breaks (<code>&lt;br&gt;</code>) used in the HTML code?
+            <form id="e4Form">
+                <input type="text" id="e4Answer" placeholder="Your Answer">
+                <button type="button" onclick="checkAnswer(4)">Submit Answer</button>
+                <p id="e4Result"></p>
+            </form>
+        </li>
+        <li>
+            <strong>Exercise 5:</strong> What happens when the user clicks the "Submit" button in the HTML form?
+            <form id="e5Form">
+                <input type="text" id="e5Answer" placeholder="Your Answer">
+                <button type="button" onclick="checkAnswer(5)">Submit Answer</button>
+                <p id="e5Result"></p>
+            </form>
+        </li>
+    </ol>
+</div>
+<script>
+    function checkAnswer(exerciseNumber) {
+        const answerId = "e" + exerciseNumber + "Answer";
+        const resultId = "e" + exerciseNumber + "Result";
+        const answer = document.getElementById(answerId).value;
+        const correctAnswers = {
+            1: "The HTML code creates a form for entering the first name and submits the data to /action_page.php.",
+            2: "The <input> element provides an input field for 'First name.'",
+            3: "The <input> element has attributes for type, ID, and name.",
+            4: "Line breaks are used for visual separation and layout.",
+            5: "Clicking the 'Submit' button sends the form data to the /action_page.php URL."
+        };
+
+        if (answer === correctAnswers[exerciseNumber]) {
+            document.getElementById(resultId).textContent = "Correct!";
+            document.getElementById(resultId).style.color = "green";
+        } else {
+            document.getElementById(resultId).textContent = "Try again. The correct answer is: " + correctAnswers[exerciseNumber];
+            document.getElementById(resultId).style.color = "red";
+        }
+    }
+</script>
+</body>
+</html>

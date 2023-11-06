@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container {
+            background-color: #f2e7fe;
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #d6b6ff;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>5 Exercises about HTML Attributes</h2>
+    <ol>
+        <li>
+            <strong>Exercise 1:</strong> What is the purpose of the "placeholder" attribute in HTML?
+            <form id="e1Form">
+                <input type="text" id="e1Answer" placeholder="Your Answer">
+                <button type="button" onclick="checkAnswer(1)">Submit Answer</button>
+                <p id="e1Result"></p>
+            </form>
+        </li>
+        <li>
+            <strong>Exercise 2:</strong> How is the "placeholder" attribute used in the provided HTML code?
+            <form id="e2Form">
+                <input type="text" id="e2Answer" placeholder="Your Answer">
+                <button type="button" onclick="checkAnswer(2)">Submit Answer</button>
+                <p id="e2Result"></p>
+            </form>
+        </li>
+        <li>
+            <strong>Exercise 3:</strong> What is the purpose of the "pattern" attribute in HTML?
+            <form id="e3Form">
+                <input type="text" id="e3Answer" placeholder="Your Answer">
+                <button type="button" onclick="checkAnswer(3)">Submit Answer</button>
+                <p id="e3Result"></p>
+            </form>
+        </li>
+        <li>
+            <strong>Exercise 4:</strong> How does the "pattern" attribute enforce a specific input format?
+            <form id="e4Form">
+                <input type="text" id="e4Answer" placeholder="Your Answer">
+                <button type="button" onclick="checkAnswer(4)">Submit Answer</button>
+                <p id="e4Result"></p>
+            </form>
+        </li>
+        <li>
+            <strong>Exercise 5:</strong> What is the overall purpose of the provided HTML code?
+            <form id="e5Form">
+                <input type="text" id="e5Answer" placeholder="Your Answer">
+                <button type="button" onclick="checkAnswer(5)">Submit Answer</button>
+                <p id="e5Result"></p>
+            </form>
+        </li>
+    </ol>
+</div>
+<script>
+    function checkAnswer(exerciseNumber) {
+        const answerId = "e" + exerciseNumber + "Answer";
+        const resultId = "e" + exerciseNumber + "Result";
+        const answer = document.getElementById(answerId).value;
+        const correctAnswers = {
+            1: "The 'placeholder' attribute provides a short hint describing the expected input value.",
+            2: "The 'placeholder' attribute is used to provide a hint for the expected input format in the phone number field.",
+            3: "The 'pattern' attribute is used to enforce a specific input format in the phone number field.",
+            4: "The 'pattern' attribute specifies the format, e.g., '123-45-678', and validates input accordingly.",
+            5: "The overall purpose of the code is to guide users in entering phone numbers in a specific format using 'placeholder' and 'pattern' attributes."
+        };
+
+        if (answer.toLowerCase() === correctAnswers[exerciseNumber].toLowerCase()) {
+            document.getElementById(resultId).textContent = "Correct!";
+            document.getElementById(resultId).style.color = "green";
+        } else {
+            document.getElementById(resultId).textContent = "Try again. The correct answer is: " + correctAnswers[exerciseNumber];
+            document.getElementById(resultId).style.color = "red";
+        }
+    }
+</script>
+</body>
+</html>
