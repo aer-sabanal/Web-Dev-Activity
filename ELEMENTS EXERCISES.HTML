@@ -57,6 +57,7 @@
             </form>
         </li>
     </ol>
+    <button type="button" onclick="retryAllQuestions()">Retry All</button>
 </div>
 <script>
     function checkAnswer(exerciseNumber) {
@@ -71,12 +72,21 @@
             5: "sends the form data to the /action_page.php URL."
         };
 
-      if (answer.toLowerCase() === correctAnswers[exerciseNumber].toLowerCase()) {
+        if (answer.toLowerCase() === correctAnswers[exerciseNumber].toLowerCase()) {
             document.getElementById(resultId).textContent = "Correct!";
             document.getElementById(resultId).style.color = "green";
         } else {
             document.getElementById(resultId).textContent = "Try again. The correct answer is: " + correctAnswers[exerciseNumber];
             document.getElementById(resultId).style.color = "red";
+        }
+    }
+
+    function retryAllQuestions() {
+        for (let i = 1; i <= 5; i++) {
+            const answerId = "e" + i + "Answer";
+            const resultId = "e" + i + "Result";
+            document.getElementById(answerId).value = ""; // Clear the previous answer
+            document.getElementById(resultId).textContent = ""; // Clear the result message
         }
     }
 </script>
