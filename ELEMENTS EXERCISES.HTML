@@ -65,13 +65,13 @@
         const answer = document.getElementById(answerId).value;
         const correctAnswers = {
             1: "The HTML code creates a form for entering the first name and submits the data to /action_page.php.",
-            2: "The <input> element provides an input field for 'First name.'",
-            3: "The <input> element has attributes for type, ID, and name.",
+            2: "<input>",
+            3: "<input>",
             4: "Line breaks are used for visual separation and layout.",
-            5: "Clicking the 'Submit' button sends the form data to the /action_page.php URL."
+            5: "sends the form data to the /action_page.php URL."
         };
 
-        if (answer === correctAnswers[exerciseNumber]) {
+      if (answer.toLowerCase() === correctAnswers[exerciseNumber].toLowerCase()) {
             document.getElementById(resultId).textContent = "Correct!";
             document.getElementById(resultId).style.color = "green";
         } else {
