@@ -65,13 +65,13 @@
         const answer = document.getElementById(answerId).value;
         const correctAnswers = {
             1: "The HTML code creates a form with radio buttons to choose a favorite Pinoy artist.",
-            2: "The input type 'radio' is used for radio buttons in HTML.",
-            3: "Labels are associated with radio buttons to enhance user-friendliness.",
-            4: "When the user clicks the 'Submit' button, the selected choice is sent to the form's action URL.",
-            5: "The action attribute specifies the URL for form submission."
+            2: "radio",
+            3: "enhance",
+            4: "the selected choice is sent to the form's action URL.",
+            5: "URL"
         };
 
-        if (answer.toLowerCase() === correctAnswers[exerciseNumber].toLowerCase()) {
+       if (answer.toLowerCase() === correctAnswers[exerciseNumber].toLowerCase()) {
             document.getElementById(resultId).textContent = "Correct!";
             document.getElementById(resultId).style.color = "green";
         } else {
