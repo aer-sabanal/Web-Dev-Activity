@@ -57,6 +57,7 @@
             </form>
         </li>
     </ol>
+    <button type="button" onclick="retryAllQuestions()">Retry All</button>
 </div>
 <script>
     function checkAnswer(exerciseNumber) {
@@ -77,6 +78,15 @@
         } else {
             document.getElementById(resultId).textContent = "Try again. The correct answer is: " + correctAnswers[exerciseNumber];
             document.getElementById(resultId).style.color = "red";
+        }
+    }
+
+    function retryAllQuestions() {
+        for (let i = 1; i <= 5; i++) {
+            const answerId = "e" + i + "Answer";
+            const resultId = "e" + i + "Result";
+            document.getElementById(answerId).value = ""; // Clear the previous answer
+            document.getElementById(resultId).textContent = ""; // Clear the result message
         }
     }
 </script>
