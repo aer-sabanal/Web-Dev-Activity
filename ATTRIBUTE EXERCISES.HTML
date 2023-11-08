@@ -64,11 +64,11 @@
         const resultId = "e" + exerciseNumber + "Result";
         const answer = document.getElementById(answerId).value;
         const correctAnswers = {
-            1: "The 'placeholder' attribute provides a short hint describing the expected input value.",
-            2: "The 'placeholder' attribute is used to provide a hint for the expected input format in the phone number field.",
-            3: "The 'pattern' attribute is used to enforce a specific input format in the phone number field.",
-            4: "The 'pattern' attribute specifies the format, e.g., '123-45-678', and validates input accordingly.",
-            5: "The overall purpose of the code is to guide users in entering phone numbers in a specific format using 'placeholder' and 'pattern' attributes."
+            1: "hint",
+            2: "format",
+            3: "enforce",
+            4: "format",
+            5: "guide"
         };
 
         if (answer.toLowerCase() === correctAnswers[exerciseNumber].toLowerCase()) {
